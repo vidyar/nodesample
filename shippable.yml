@@ -6,9 +6,6 @@ install: npm install mocha
          npm install should
 script: make test 
 
-
-
-
 after_script: 
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -u tdd 
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
@@ -17,5 +14,6 @@ after_script:
 
 notifications:
   email: vidya@shippable.com
+        - vidyac.raghav@gmail.com
 #check for pull req1
 #checking
