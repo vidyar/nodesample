@@ -7,9 +7,12 @@ install: npm install mocha
 script: make test 
 
 
+
+
 after_script: 
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -u tdd 
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
   - ./node_modules/.bin/_mocha report reporter --dir shippable/testresults
 
 #check for pull req1
+#checking
