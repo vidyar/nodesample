@@ -14,5 +14,8 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
   - ./node_modules/.bin/_mocha report reporter --dir shippable/testresults
 
+
+notifications:
+  email: vidya@shippable.com
 #check for pull req1
 #checking
